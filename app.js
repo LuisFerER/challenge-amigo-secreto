@@ -18,7 +18,8 @@ function agregarLista(){
     lista.innerHTML = '';
     for(let i = 0; i < amigos.length; i++) {
         let nuevoAmigo = document.createElement('li');
-        nuevoAmigo.appendChild(document.createTextNode(amigos[i]));
+        nuevoAmigo.textContent = amigos[i];
+        //nuevoAmigo.appendChild(document.createTextNode(amigos[i]));
         lista.appendChild(nuevoAmigo);
     }
 }
