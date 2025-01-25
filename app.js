@@ -19,7 +19,6 @@ function agregarLista(){
     for(let i = 0; i < amigos.length; i++) {
         let nuevoAmigo = document.createElement('li');
         nuevoAmigo.textContent = amigos[i];
-        //nuevoAmigo.appendChild(document.createTextNode(amigos[i]));
         lista.appendChild(nuevoAmigo);
     }
 }
