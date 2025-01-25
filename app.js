@@ -27,7 +27,7 @@ function sortearAmigo() {
     lista.innerHTML = '';
     let indiceAmigo = Math.floor(Math.random()*amigos.length);
     let amigoSecreto = document.createElement('li');
-    amigoSecreto.appendChild(document.createTextNode(amigos[indiceAmigo]));
+    amigoSecreto.textContent = amigos[indiceAmigo];
     resultado.appendChild(amigoSecreto);
 }
 
